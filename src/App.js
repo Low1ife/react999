@@ -11,7 +11,7 @@ import Portfolio from './components/pages/Portfolio';
 function App(){
     return (
       <Router>
-          <Route path="/" component={Main} />
+          <Route path="/" exact component={Main} />
           <Route path="/About" component={About} />
           <Route path="/Reference" component={Reference} />
           <Route path="/Script" component={Script} />
