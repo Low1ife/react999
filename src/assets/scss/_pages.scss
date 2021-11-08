@@ -22,3 +22,98 @@
         margin-left: 18vw;
     }
 }
+
+
+// about__cont
+#aboutCont {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Chosunilbo_myungjo';
+}
+.about__cont {
+    .about {
+        padding-bottom: 250px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        h3 {
+            font-size: 30px;
+            line-height: 1;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        &:nth-child(1) {
+            .about__img {
+                flex: 0 0 100%;
+            }
+            .about__txt {
+                flex: 0 0 100%;
+
+                h3 {
+                    margin-top: 2em;
+                }
+            }
+        }
+        &:nth-child(2) {
+
+            .about__img {
+                flex: 0 0 64%;
+            }
+            .about__txt {
+                flex: 0 0 30%;
+            }
+        }
+        &:nth-child(3) {
+            flex-direction: row-reverse;
+
+            .about__img {
+                flex: 0 0 54%;
+            }
+            .about__txt {
+                flex: 0 0 40%;
+            }
+        }
+    }
+}
+
+// port__cont
+#portCont {
+    background-color: #000;
+    color: #fff;
+}
+.port__cont {
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 300px;
+
+    .port {
+        width: 32%;
+        margin-bottom: 2%;
+
+        .pImg {
+
+        }
+        .pText {
+            padding: 35px;
+            background: #151517;
+
+            h3 {
+                font-family: "saol";
+                font-size: 50px;
+                line-height: 47px;
+            }
+            p {
+                font-size: 12px;
+                color: #B0AEAD;
+            }
+        }
+    }
+}
