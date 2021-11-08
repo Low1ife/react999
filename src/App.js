@@ -9,7 +9,7 @@ import Contact from './components/pages/Contact';
 import Portfolio from './components/pages/Portfolio';
 
 function App(){
-    return (
+    return (  
       <Router>
           <Route path="/" exact component={Main} />
           <Route path="/About" component={About} />
