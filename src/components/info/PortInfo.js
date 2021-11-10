@@ -5,10 +5,10 @@ function PortInfo({title, category, link, image}){
     return (
         <div class="port">
             <a href={link}>
-                <div class="pImg">
+                <div className="pImg">
                     <img src={image} alt={title} />
                 </div>
-                <div class="pText">
+                <div className="pText">
                     <h3>{title}</h3>
                     <p>{category}</p>
                 </div>
