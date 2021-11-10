@@ -10,7 +10,7 @@ function PortInfo({title, category, link, image}){
                 </div>
                 <div className="pText">
                     <h3>{title}</h3>
-                    <p>{category}</p>
+                    <p>{category}</p>  
                 </div>
             </a>
         </div>
