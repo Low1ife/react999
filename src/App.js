@@ -7,6 +7,7 @@ import Script from './components/pages/Script';
 import Youtube from './components/pages/Youtube';
 import Contact from './components/pages/Contact';
 import Portfolio from './components/pages/Portfolio';
+import ReferDetail from './components/pages/ReferDetail';
 
 function App(){
     return (  
@@ -14,6 +15,7 @@ function App(){
           <Route path="/" exact component={Main} />
           <Route path="/About" component={About} />
           <Route path="/Reference" component={Reference} />
+          <Route path="/refer-detail" component={ReferDetail} />
           <Route path="/Script" component={Script} />
           <Route path="/Youtube" component={Youtube} />
           <Route path="/Contact" component={Contact} />

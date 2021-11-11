@@ -20,8 +20,8 @@ function Contact (){
                 <Contents>
                     <section id="mainCont">
                         <h2 className="sr-only">메인 컨텐츠 영역입니다.</h2>
-                        <div className="main__cont">
-                            {textInfo.map((info) => (
+                        <div className="main__cont tact">
+                            {textInfo.map((info , i) => (
                                 <Info text={info.text} key={info.text}/>
                             ))}
                         </div>

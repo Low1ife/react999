@@ -1,17 +1,17 @@
-import React from 'react';
-import Header from '../layouts/Header';
-import Footer from '../layouts/Footer';
-import Contents from '../layouts/Contents';
-import Webtitle from '../layouts/Webtitle';
-import ContInfo from '../layouts/ContInfo';
+import React from "react";
+import Header from "../layouts/Header";
+import Footer from "../layouts/Footer";
+import Contents from "../layouts/Contents";
+import Webtitle from "../layouts/Webtitle";
+import ContInfo from "../layouts/ContInfo";
 
 function AboutText({title, desc, image}){
     return (
-        <div class="about">
-            <div class="about__img">
+        <div className="about">
+            <div className="about__img">
                 <img src={image} alt={title} />
             </div>
-            <div class="about__txt">
+            <div className="about__txt">
                 <h3>{title}</h3>
                 <p>{desc}</p>
             </div>
@@ -40,23 +40,32 @@ const aboutInfo = [
     }
 ];
 
-function About() {
+function About(){
     return (
         <div>
             <Header />
+
             <Contents>
                 <section id="aboutCont">
-                    <div class="container">
-                        <Webtitle text={['introduce','me']} />
-                        <div class="about__cont">
-                            {aboutInfo.map((info) => (
-                                <AboutText key={info.id} title={info.title} desc={info.desc} image={info.image}  />
+                    <div className="container">
+                        <Webtitle text={['introduce','me']} />  
+                        <div className="about__cont">
+                            {aboutInfo.map((info)=>(
+                                <AboutText 
+                                    key = {info.id}
+                                    title = {info.title}
+                                    desc = {info.desc}
+                                    image = {info.image}
+                                />
                             ))}
                         </div>
                     </div>
                 </section>
+                
                 <ContInfo />
-            </Contents>
+                
+            </Contents>    
+
             <Footer />
         </div>
     )
